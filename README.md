@@ -44,7 +44,7 @@ NAT：
 
 递归DNS：
 
-![](https://yqfile.alicdn.com/a33d57c0a93ebf9eacf090e6f81a98bcda023334.png)
+![](https://raw.githubusercontent.com/haohaozaici/HttpDNS/master/img/%E9%80%92%E5%BD%92dns.png)
 
 公共DNS：
 
