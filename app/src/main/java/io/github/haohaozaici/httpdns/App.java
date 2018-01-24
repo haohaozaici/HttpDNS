@@ -17,5 +17,8 @@ public class App extends Application {
         Utils.init(this);
         XLog.init();
 
+        //preload dns cache
+
+
     }
 }

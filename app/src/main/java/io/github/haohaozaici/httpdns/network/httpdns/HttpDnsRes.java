@@ -45,7 +45,7 @@ public class HttpDnsRes {
     public static class DnsBean {
 
         public DnsBean() {
-            this.date = new Date();
+            this.time = System.currentTimeMillis();
         }
 
         /**
@@ -62,7 +62,7 @@ public class HttpDnsRes {
         private int ttl;
         private int origin_ttl;
         private List<String> ips;
-        private Date date;
+        private long time;
 
         public String getHost() {
             return host;
@@ -104,12 +104,12 @@ public class HttpDnsRes {
             this.ips = ips;
         }
 
-        public Date getDate() {
-            return date;
+        public long getTime() {
+            return time;
         }
 
-        public void setDate(Date date) {
-            this.date = date;
+        public void setTime(int time) {
+            this.time = time;
         }
     }
 }
