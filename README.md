@@ -12,6 +12,14 @@
 
 [腾讯云：移动解析HttpDNS](https://cloud.tencent.com/document/product/379/3523)
 
+## Todo List
+
+- [ ] 同步请求自动重试
+- [ ] 网络切换更新缓存
+- [ ] 允许HTTP DNS返回TTL过期的域名
+- [ ] 使用代理情况
+
+
 # 基础概念
 
 DNS：
