@@ -30,13 +30,13 @@ public class Network {
         return INSTANCE;
     }
 
-    private static Retrofit retrofit;
+    private Retrofit retrofit;
 
-    private static Retrofit getRetrofit() {
+    private Retrofit getRetrofit() {
         if (retrofit == null) {
 
             OkHttpClient.Builder builder = new OkHttpClient.Builder()
-                    .dns(new OkHttpDns())
+                    .dns(OkHttpDns.getInstance())
                     .readTimeout(10, TimeUnit.SECONDS)
                     .connectTimeout(10, TimeUnit.SECONDS);
 
@@ -57,7 +57,7 @@ public class Network {
         return retrofit;
     }
 
-    public static APIService getApiService() {
+    public APIService getApiService() {
         return getRetrofit().create(APIService.class);
     }
 }

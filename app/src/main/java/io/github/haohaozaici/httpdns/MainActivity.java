@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         query.setOnClickListener(v -> {
-            Network.getApiService().getSplashPic().subscribeOn(Schedulers.io())
+            Network.getInstance().getApiService().getSplashPic().subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe(new FlowableSubscriber<SplashPicRes>() {
                         @Override
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
                         @Override
                         public void onError(Throwable t) {
-
+                            XLog.d(t);
                         }
 
                         @Override

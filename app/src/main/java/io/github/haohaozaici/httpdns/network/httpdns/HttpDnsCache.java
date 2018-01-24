@@ -6,9 +6,7 @@ import android.util.Log;
 import com.google.gson.Gson;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -18,7 +16,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-import static io.github.haohaozaici.httpdns.network.httpdns.HttpDnsRes.*;
+import static io.github.haohaozaici.httpdns.network.httpdns.HttpDnsRes.DnsBean;
 
 /**
  * Created by haoyuan on 2018/1/23.
@@ -100,7 +98,7 @@ public class HttpDnsCache {
             for (String hostname : mHosts) {
                 http_dns_url.append(hostname).append(",");
             }
-            http_dns_url.deleteCharAt(http_dns_url.length());
+            http_dns_url.deleteCharAt(http_dns_url.length() - 1);
         }
 
         Request request = new Request.Builder()
