@@ -34,8 +34,7 @@ NAT：
 
 权威DNS：
 
-递归DNS：<br>
-<p>
+递归DNS：
 
 ![](https://yqfile.alicdn.com/a33d57c0a93ebf9eacf090e6f81a98bcda023334.png)
 
