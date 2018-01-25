@@ -28,6 +28,7 @@ import static io.github.haohaozaici.httpdns.network.httpdns.HttpDnsRes.DnsBean;
  * todo 2.网络切换更新缓存
  * todo 3.允许HTTP DNS返回TTL过期的域名
  * todo 4.使用代理情况
+ * todo 5.webview
  */
 
 public class HttpDnsCache {
